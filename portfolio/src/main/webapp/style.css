@@ -1,9 +1,69 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+/* Navigation bar */
+.navbar {
+    /*display: flex;
+    justify-content: space-between; */
+    padding: 40px;
 }
 
-#greeting-container {
-  margin-top: 20px;
+.left-side {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar > .right-side > div {
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.navbar-link {
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s; 
+}   
+
+.navbar-link a {
+    color:rgb(21, 74, 154);
+    text-decoration: none;
+    transition: color 0.5s;    
+}
+
+.home-link {
+    height:2px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.home-link a {
+    color:rgb(21, 74, 154);
+    text-decoration: none;
+}
+.navbar-link:hover {
+    border-bottom: 1px solid #a4adb5;
+}
+
+/* WHO Page */
+
+.two-column {
+    align-items: center;
+    column-gap: 100px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+    padding-top: 125px;
+
+}
+
+.profile-image img {
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+}
+
+.profile-content h1 {
+    color: rgb(21, 74, 154);
 }
