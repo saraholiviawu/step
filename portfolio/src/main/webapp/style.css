@@ -1,3 +1,26 @@
+/* Keep footer at page bottom */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: clamp(400px,7vw,450px);
+}
+
+#footer {
+    bottom: 0;
+    background-color: #d4d4d4;
+    padding: 100px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
 /* Set main font color to be used in nav bar */
 :root {
     --main-color: rgb(21, 74, 154);
@@ -6,6 +29,8 @@
 /* Navigation bar */
 .navbar {
     padding: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .left-side {
@@ -15,16 +40,20 @@
 
 .right-side {
     display: flex;
-    justify-content: flex-end;
 }
 
 .navbar > .right-side > div {
     margin-right: 20px;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+
+.navbar > .left-side > div {
+    margin-left: 20px;
+    font-size: 1.2em;
 }
 
 .navbar-link {
-    height:22px;
+    height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s; 
 }   
@@ -36,7 +65,7 @@
 }
 
 .home-link {
-    height:2px;
+    height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
@@ -57,16 +86,15 @@
     display: grid;
     grid-template-columns: 600px 600px;
     justify-content: center;
-    padding-top: 125px;
-
+    padding-top: 7vw;
 }
 
 .profile-image img {
     border-radius: 50%;
-    height: 600px;
-    width: 600px;
+    height: auto;
+    width: 100%;
 }
 
 .profile-content h1 {
-    color: rgb(21, 74, 154);
+    color: var(--main-color);
 }
