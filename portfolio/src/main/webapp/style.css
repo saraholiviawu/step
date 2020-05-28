@@ -1,7 +1,10 @@
+/* Set main font color to be used in nav bar */
+:root {
+    --main-color: rgb(21, 74, 154);
+}
+
 /* Navigation bar */
 .navbar {
-    /*display: flex;
-    justify-content: space-between; */
     padding: 40px;
 }
 
@@ -27,7 +30,7 @@
 }   
 
 .navbar-link a {
-    color:rgb(21, 74, 154);
+    color: var(--main-color);
     text-decoration: none;
     transition: color 0.5s;    
 }
@@ -39,7 +42,7 @@
 }
 
 .home-link a {
-    color:rgb(21, 74, 154);
+    color: var(--main-color);
     text-decoration: none;
 }
 .navbar-link:hover {
