@@ -16,6 +16,7 @@
  * Generates a URL for a random image in the images directory and adds an img
  * element with that URL to the page.
  */
+
 function randomizeImage() {
   // The images directory contains 10 images, so generate a random index between
   // 1 and 10.
@@ -29,4 +30,15 @@ function randomizeImage() {
   // Remove the previous image.
   imageContainer.innerHTML = '';
   imageContainer.appendChild(imgElement);
+
+
+  const captions =
+      ['Redondo Beach Pier in California', 'Riviera Village in Southern California', 'Louvre Museum in Paris, France', 'Nice, France',
+        'Park Güell in Barcelona, Spain', 'OK Hostel in Madrid, Spain', 'Fiesta de San Juan in Bilbao, Spain', 'Bilbao, Spain', 'Redondo Beach Pier in Southern California', "Yale University in New Haven, Connecticut"];
+  
+  const caption = captions[imageIndex-1];
+  
+  const captionContainer = document.getElementById('random-image-caption');
+  captionContainer.innerText = caption;
 }
+

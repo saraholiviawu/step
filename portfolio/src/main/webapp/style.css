@@ -3,7 +3,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
 }
 
 body {
@@ -21,6 +24,70 @@ body {
     width: 100%;
 }
 
+/* Welcome page */
+.welcome-wrapper {
+    background-image: url(images/hero.jpg);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    vertical-align: middle;
+}
+
+.welcome-img-text-wrapper {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: auto;
+    margin-top: 250px;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 10vw;
+}
+
+.welcome-text h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5vw;;
+    padding-bottom: 2.5vw;
+}
+
+.welcome-img-text-wrapper a {
+    font-size: 1.3em;
+    margin-top: 20px;
+    font-size: 2.5vw;
+}
+
+.welcome-button {
+    display: inline-block;
+    color: #ffffff;
+    width: 15vw;
+    font-weight: bolder;
+    padding: 1vw;
+    border: 5.5px solid #fff;
+    outline: none;
+    text-decoration: none;
+    font-size: 2vw;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.welcome-button:hover, .welcome-button:active {
+    background-color: #fff;
+    color: #8b665d;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    border: 5.5px solid #fff;
+}
+
+.welcome-button:active {
+    transform: translateY(2px);
+}
+
 /* Navigation bar */
 :root {
     --main-color: rgb(21, 74, 154);
@@ -33,6 +100,7 @@ body {
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 .left-side {
@@ -43,37 +111,37 @@ body {
 .right-side {
     display: flex;
 }
-
 .navbar > .right-side > div {
     margin-right: 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .navbar > .left-side > div {
     margin-left: 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .navbar-link {
-    height: 22px;
-    border-bottom: 1px solid transparent;
+    height: 1 vh;
+    border-bottom: 1.5px solid #f5031900;
     transition: border-bottom 0.5s; 
+    
 }   
 
 .navbar-link a {
-    color: var(--main-color);
+    color: #fff;
     text-decoration: none;
     transition: color 0.5s;    
 }
 
 .home-link {
-    height: 22px;
-    border-bottom: 1px solid transparent;
+    height: 1vh;;
+    border-bottom: 1.5px solid transparent;
     transition: border-bottom 0.5s;
 }
 
 .home-link a {
-    color: var(--main-color);
+    color: #fff;
     text-decoration: none;
 }
 .navbar-link:hover {
@@ -86,19 +154,26 @@ body {
     align-items: center;
     column-gap: 100px;
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 600px 700px;
     justify-content: center;
-    padding-top: 7vw;
+    padding-top: 200px;
 }
 
 .profile-image img {
-    border-radius: 50%;
-    height: auto;
-    width: 100%;
+    max-height: 600px;
+    width: auto;
+    box-shadow: 25px 25px 0 #212f44;
 }
 
+.profile-content {;
+    color: #fff;
+}
 .profile-content h1 {
-    color: var(--main-color);
+    font-size: 95px;
+}
+
+.profile-content p {
+    font-size: 18px;
 }
 
 /*GALLERY page */
@@ -118,59 +193,125 @@ body {
 }
 
 .gal-cover-container h2 {
+    min-width: 50vw;
+    max-width: 75vw;
+    text-align: center;
+    margin:0 auto;
     margin-top: -17px;
     font-family: "Source Sans pro", sans-serif;
-    font-size: 2vw;
     text-align: center;
-    font-weight: 400;
-    color: #908282;
+    font-weight: normal;
     padding: 2vh;
+    color: #00000066;
+    font-size: 1.8vw;
 }
 
+#random-image-caption {
+    color: #000;
+    font-size: 2vw;
+    font-family: "Shadows into Light", sans-serif;
+    font-weight: bold;
+    padding-top: 3vw;
 
-/* .button {
-    margin-top: 6vh;
-    font-size: 1.3em;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 900;
-} */
-
-
-
+}
 
 .button {
     display: inline-block;
-    width: 200px;
+    color: #ffffff;
+    width: 15vw;
     font-weight: bold;
-    padding: 10px;
-    color: #000;
-    border: 3px solid #000;
+    padding: 1vw;
+    border: 3px solid #475d8e;
     outline: none;
     text-decoration: none;
-    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    font-size: 2vw;
+    background-color:#475d8e;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out; */
 }
 
-.btn:hover, .btn:active {
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-/*
-@media only screen and (max-width: 920px) {
-    .gal-cover-container {
-        margin-top: 100px;
-    }
+.button:hover, .button:active {
+    background-color: #475d8e8c;
+    color: #fff;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    border: 3px solid #475d8e8c;
 }
 
-@media only screen and (max-width: 540px) {
-    .gal-cover-container {
-        margin-top: 150px;
-    }
-    h1 {
-        font-size: 5em;
-    }
-    h2 {
-        font-size: 1.4em;
-    }
+.button:active {
+    transform: translateY(2px);
 }
-*/
+
+#random-image-container img {
+    padding: 2vh;
+    height: 80vh;
+    width: auto;
+}
+
+/* PROJECTS page */
+
+#project-img-1 {
+    background-image: url(images/project1.jpg);
+}
+
+#project-img-2 {
+    background-image: url(images/project2.jpg);
+}
+
+.project-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-item-wrapper {
+    position: relative;
+}
+
+.project-img-background {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.project-logo-wrapper img{
+    width: 95%;
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+.project-img-text-wrapper .project-subtitle {
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+}
+
+.project-img-text-wrapper:hover .project-subtitle {
+    font-weight: 600;
+    color: #fff;
+}
+
+.project-img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.project-content-wrapper h1 {
+    font-size: 7vw;
+    font-family: "Shadows into Light", sans-serif;
+    font-weight: lighter;
+    padding: 2vw;
+    text-align: center;
+}
