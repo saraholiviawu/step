@@ -136,41 +136,29 @@ body {
 } */
 
 
-
-
 .button {
     display: inline-block;
-    width: 200px;
+    color: #ffffff;
+    width: 15vw;
     font-weight: bold;
-    padding: 10px;
-    color: #000;
-    border: 3px solid #000;
+    padding: 1vw;
+    border: 3px solid #ffdede;
     outline: none;
     text-decoration: none;
-    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    font-size: 2vw;
+    background-color:#ffdede;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out; */
 }
 
-.btn:hover, .btn:active {
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-/*
-@media only screen and (max-width: 920px) {
-    .gal-cover-container {
-        margin-top: 100px;
-    }
+
+
+.button:hover, .button:active {
+    background-color: #ffe7e7;
+    color: #fff;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    border: 3px solid #ffdede;
 }
 
-@media only screen and (max-width: 540px) {
-    .gal-cover-container {
-        margin-top: 150px;
-    }
-    h1 {
-        font-size: 5em;
-    }
-    h2 {
-        font-size: 1.4em;
-    }
+.button:active {
+    transform: translateY(2px);
 }
-*/
