@@ -16,6 +16,7 @@
  * Generates a URL for a random image in the images directory and adds an img
  * element with that URL to the page.
  */
+
 function randomizeImage() {
   // The images directory contains 10 images, so generate a random index between
   // 1 and 10.
