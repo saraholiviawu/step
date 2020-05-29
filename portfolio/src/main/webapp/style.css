@@ -43,21 +43,21 @@ body {
 .right-side {
     display: flex;
 }
-
 .navbar > .right-side > div {
     margin-right: 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .navbar > .left-side > div {
     margin-left: 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .navbar-link {
-    height: 22px;
-    border-bottom: 1px solid transparent;
+    height: 1 vh;
+    border-bottom: 1.5px solid #f5031900;
     transition: border-bottom 0.5s; 
+    
 }   
 
 .navbar-link a {
@@ -67,8 +67,8 @@ body {
 }
 
 .home-link {
-    height: 22px;
-    border-bottom: 1px solid transparent;
+    height: 1vh;;
+    border-bottom: 1.5px solid transparent;
     transition: border-bottom 0.5s;
 }
 
@@ -127,15 +127,6 @@ body {
     padding: 2vh;
 }
 
-
-/* .button {
-    margin-top: 6vh;
-    font-size: 1.3em;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 900;
-} */
-
-
 .button {
     display: inline-block;
     color: #ffffff;
@@ -150,8 +141,6 @@ body {
     transition: background-color 0.2s ease-out, color 0.2s ease-out; */
 }
 
-
-
 .button:hover, .button:active {
     background-color: #ffe7e7;
     color: #fff;
@@ -161,4 +150,10 @@ body {
 
 .button:active {
     transform: translateY(2px);
+}
+
+#random-image-container img {
+    padding-top: 3vh;
+    height: 80vh;
+    width: auto;
 }
