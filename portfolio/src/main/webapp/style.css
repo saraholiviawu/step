@@ -118,13 +118,26 @@ body {
 }
 
 .gal-cover-container h2 {
+    min-width: 50vw;
+    max-width: 75vw;
+    text-align: center;
+    margin:0 auto;
     margin-top: -17px;
     font-family: "Source Sans pro", sans-serif;
-    font-size: 2vw;
     text-align: center;
-    font-weight: 400;
-    color: #908282;
+    font-weight: normal;
     padding: 2vh;
+    color: #00000066;
+    font-size: 1.8vw;
+}
+
+#random-image-caption {
+    color: #000;
+    font-size: 2vw;
+    font-family: "Shadows into Light", sans-serif;
+    font-weight: bold;
+    padding-top: 3vw;
+
 }
 
 .button {
@@ -153,7 +166,8 @@ body {
 }
 
 #random-image-container img {
-    padding-top: 3vh;
+    padding: 2vh;
     height: 80vh;
     width: auto;
 }
+

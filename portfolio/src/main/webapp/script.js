@@ -29,4 +29,15 @@ function randomizeImage() {
   // Remove the previous image.
   imageContainer.innerHTML = '';
   imageContainer.appendChild(imgElement);
+
+
+  const captions =
+      ['Redondo Beach Pier in California', 'Riviera Village in Southern California', 'Louvre Museum in Paris, France', 'Nice, France',
+        'Park Güell in Barcelona, Spain', 'OK Hostel in Madrid, Spain', 'Fiesta de San Juan in Bilbao, Spain', 'Bilbao, Spain', 'Redondo Beach Pier in Southern California', "Yale University in New Haven, Connecticut"];
+  
+  const caption = captions[imageIndex-1];
+  
+  const captionContainer = document.getElementById('random-image-caption');
+  captionContainer.innerText = caption;
 }
+
