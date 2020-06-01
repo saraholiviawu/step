@@ -1,5 +1,4 @@
-/* Keep footer at page bottom */
-
+/* Applies across all pages */
 * {
     margin: 0;
     padding: 0;
@@ -7,21 +6,6 @@
 
 html {
     background-color: black;
-}
-
-body {
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: clamp(400px,7vw,450px);
-}
-
-#footer {
-    bottom: 0;
-    background-color: #d4d4d4;
-    padding: 100px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
 }
 
 /* Welcome page */
@@ -143,12 +127,43 @@ body {
 .home-link a {
     color: #fff;
     text-decoration: none;
-}
+} 
 .navbar-link:hover {
     border-bottom: 1px solid #a4adb5;
 }
 
+/* .icon-links ul {
+    list-style: none;
+}
+
+.icon-links li {
+    width: 1vh;;
+    height: 1vh;
+    line-height: 75px;
+    text-align: center;
+    border: 5px solid #fff;
+    float: left;
+}
+
+.icon-white {
+    color: #fff;
+}
+
+.icon-black {
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+} */
+
 /* WHO Page */
+
+.profile-wrapper > h1 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+
+    padding: 30px;
+}
 
 .two-column {
     align-items: center;
@@ -156,7 +171,7 @@ body {
     display: grid;
     grid-template-columns: 600px 700px;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 .profile-image img {
@@ -169,12 +184,13 @@ body {
     color: #fff;
 }
 .profile-content h1 {
-    font-size: 95px;
+    font-size: 100px;
 }
 
 .profile-content p {
-    font-size: 18px;
+    font-size: 22px;
 }
+
 
 /*GALLERY page */
 
@@ -183,57 +199,59 @@ body {
     position: absolute;
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
-.gal-cover-container h1 {
-    font-size: 7vw;
-    font-family: "Shadows into Light", sans-serif;
-    font-weight: lighter;
+.gal-cover-container > h1 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    padding: 30px;
 }
 
 .gal-cover-container h2 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
     min-width: 50vw;
     max-width: 75vw;
-    text-align: center;
     margin:0 auto;
     margin-top: -17px;
-    font-family: "Source Sans pro", sans-serif;
     text-align: center;
-    font-weight: normal;
-    padding: 2vh;
-    color: #00000066;
-    font-size: 1.8vw;
+    font-weight:100;
+    font-style: italic;
+
 }
 
 #random-image-caption {
-    color: #000;
-    font-size: 2vw;
-    font-family: "Shadows into Light", sans-serif;
-    font-weight: bold;
-    padding-top: 3vw;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
 
 }
 
 .button {
     display: inline-block;
     color: #ffffff;
-    width: 15vw;
+    width: 250px;
     font-weight: bold;
-    padding: 1vw;
-    border: 3px solid #475d8e;
+    padding: 14px;
+    border: 3px solid #ffffff;
     outline: none;
     text-decoration: none;
-    font-size: 2vw;
-    background-color:#475d8e;
+    font-size: 38px;
+    background-color:#000;
     transition: background-color 0.2s ease-out, color 0.2s ease-out; */
 }
 
 .button:hover, .button:active {
-    background-color: #475d8e8c;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     transition: background-color 0.2s ease-in, color 0.2s ease-in;
-    border: 3px solid #475d8e8c;
+    border: 3px solid #fff;
 }
 
 .button:active {
@@ -241,8 +259,8 @@ body {
 }
 
 #random-image-container img {
-    padding: 2vh;
-    height: 80vh;
+    padding: 14px;
+    height: 900px;
     width: auto;
 }
 
@@ -282,8 +300,8 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 9vw;
+    padding-right: 9vw;
 }
 
 .project-logo-wrapper img{
@@ -293,13 +311,15 @@ body {
 }
 
 .project-img-text-wrapper .project-subtitle {
-    font-weight: 600;
+    font-size: 17px;
+    font-weight:1 lighter;
     transition: 1s;
     color: transparent;
 }
 
 .project-img-text-wrapper:hover .project-subtitle {
-    font-weight: 600;
+    font-size: 17px;
+    font-weight:1 lighter;
     color: #fff;
 }
 
@@ -309,9 +329,8 @@ body {
 }
 
 .project-content-wrapper h1 {
-    font-size: 7vw;
-    font-family: "Shadows into Light", sans-serif;
-    font-weight: lighter;
-    padding: 2vw;
+    color: #fff;
+    font-size: 100px;
     text-align: center;
+    padding: 30px;
 }
