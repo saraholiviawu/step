@@ -42,3 +42,8 @@ function randomizeImage() {
   captionContainer.innerText = caption;
 }
 
+function getHelloName() {
+  fetch('/data').then(response => response.text()).then((phrase) => {
+    document.getElementById('phrase-container').innerText = phrase;
+  });
+}
