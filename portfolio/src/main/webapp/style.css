@@ -8,6 +8,15 @@ html {
     background-color: black;
 }
 
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+}
+
+h2 p {
+    font-family: 'Yrsa', serif;
+}
+
 /* Welcome page */
 .welcome-wrapper {
     background-image: url(images/hero.jpg);
@@ -31,8 +40,9 @@ html {
 
 .welcome-text h1 {
     text-align: center;
-    font-weight: 900;
-    font-size: 10vw;
+    font-size: 9vw;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
 }
 
 .welcome-text h2 {
@@ -132,36 +142,14 @@ html {
     border-bottom: 1px solid #a4adb5;
 }
 
-/* .icon-links ul {
-    list-style: none;
-}
-
-.icon-links li {
-    width: 1vh;;
-    height: 1vh;
-    line-height: 75px;
-    text-align: center;
-    border: 5px solid #fff;
-    float: left;
-}
-
-.icon-white {
-    color: #fff;
-}
-
-.icon-black {
-    color: #000;
-    background-color: #fff;
-    border-radius: 50%;
-} */
-
 /* WHO Page */
 
 .profile-wrapper > h1 {
     color: #fff;
     font-size: 100px;
     text-align: center;
-
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
     padding: 30px;
 }
 
@@ -191,7 +179,6 @@ html {
     font-size: 22px;
 }
 
-
 /*GALLERY page */
 
 .gal-cover-container {
@@ -203,6 +190,8 @@ html {
 }
 
 .gal-cover-container > h1 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
     color: #fff;
     font-size: 100px;
     text-align: center;
@@ -221,7 +210,6 @@ html {
     text-align: center;
     font-weight:100;
     font-style: italic;
-
 }
 
 #random-image-caption {
@@ -230,7 +218,6 @@ html {
     font-size: 30px;
     font-weight: 100;
     font-style: normal;
-
 }
 
 .button {
@@ -262,6 +249,11 @@ html {
     padding: 14px;
     height: 900px;
     width: auto;
+}
+
+.comment-wrapper {
+    color: #fff;
+    text-align: center;
 }
 
 /* PROJECTS page */
@@ -304,7 +296,7 @@ html {
     padding-right: 9vw;
 }
 
-.project-logo-wrapper img{
+.project-logo-wrapper img {
     width: 95%;
     height: 110px;
     margin-bottom: 20px;
@@ -329,6 +321,8 @@ html {
 }
 
 .project-content-wrapper h1 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
     color: #fff;
     font-size: 100px;
     text-align: center;
