@@ -48,26 +48,17 @@ function createListElement(text) {
 }
 
 /* Retrieve JSON from the server and use build-in json() to parse response into objects */
-function getHelloName() {
-//   fetch('/data').then(response => response.text()).then((phrase) => {
-//     document.getElementById('phrase-container').innerText = phrase;
-//   });
+function commentFunction() {
   fetch('/data')  // sends a request to /my-data-url
   .then(response => response.json()) // parses the response as JSON
   .then((list) => { // now we can reference the fields in myObject!
     
-    const listElement = document.getElementById('phrase-container');
+    const listElement = document.getElementById('history');
     listElement.innerHTML='';
-    listElement.appendChild(
-        createListElement('This should be the first: ' + list[0]));
-    console.log(list[0]);
-    listElement.appendChild(
-        createListElement('This should be the second: ' + list[1]));
-    console.log(list[1]);
-    listElement.appendChild(
-        createListElement('This should be the third: ' + list[2]));
-    console.log(list[2]);
+
+    list.forEach((line) => {
+      listElement.appendChild(createListElement(line));
+
+    });
   });
 }
-
-

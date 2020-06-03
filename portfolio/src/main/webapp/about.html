@@ -10,7 +10,7 @@
     <!-- font-family: 'Cormorant', serif; -->
     <!-- font-family: 'Yrsa', serif; -->
   </head>
-  <body>
+  <body onload="commentFunction()">
     <div class="container">
 
       <div class="navbar">
@@ -53,19 +53,40 @@
                 <img src="/images/profile.jpg" alt="Sarah's Profile Picture">
             </div>
             <div class="profile-content">
-                <h1>Hi,<br>I'm Sarah Wu.</h1>
-                <br>
+                <h1>Hi,<br/>I'm Sarah Wu.</h1>
+                <br/>
                 <p>I am a native Californian currently attempting to master the arts during quarantine—Adobe Illustrator, Adobe Photoshop, Adobe Lightroom, and just plain paper and pencil stick figure drawings are all on my list. My usual hobbies include rock climbing, Chloe Ting workouts, food adventures, and game nights with friends.</p>
-                <br>
+                <br/>
                 <p>Furthermore, I am a rising junior at Yale University studying computer science with an interest in medicine. I also sing with Yale's Christian a cappella group Living Water, work as a fundraiser for the Yale Alumni Office, and conduct biomedical research with the Saltzman Laboratory.</p>
 
             </div>
         </div>
       </div>
 
+      <!-- Comments section -->
       <div class="comment-wrapper">
-        <button onclick="getHelloName()">Greeting</button>
-        <div id="phrase-container"><h1></h1></div>
+        <form action="/data" method="POST">
+
+          <h2>Comments Section</h2> <!-- Come back later to update number of comments-->
+          <br/>
+          <p>I would love to hear your thoughts, feedback, or any comments! :)</p>
+          <br/>
+          <label for="namebox">Name:</label>
+          <textarea name="namebox" placeholder="Sarah Wu"></textarea>
+          <br/><br/>
+
+          <label for="commentbox">Comment:</label>
+          <textarea name="commentbox" placeholder="Commenting publicly..."></textarea>
+          <br/>
+
+          <input type="submit"/>
+        </form>
+        <!-- Comment history -->
+        <br/>
+        <p id="history"></p>
+
+
+
       </div>
 
     </div>

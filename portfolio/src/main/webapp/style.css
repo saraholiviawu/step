@@ -179,6 +179,13 @@ h2 p {
     font-size: 22px;
 }
 
+.comment-wrapper p {
+    padding: 30px;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px
+}
+
 /*GALLERY page */
 
 .gal-cover-container {
