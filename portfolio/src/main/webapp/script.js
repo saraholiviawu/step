@@ -12,11 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Generates a URL for a random image in the images directory and adds an img
- * element with that URL to the page.
- */
 
+/* Generates a URL for a random image in the images directory and adds an img
+   element with that URL to the page. */
 function randomizeImage() {
   // The images directory contains 10 images, so generate a random index between
   // 1 and 10.
@@ -42,8 +40,31 @@ function randomizeImage() {
   captionContainer.innerText = caption;
 }
 
+/** Creates an <li> element containing text. */
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
+}
+
+/* Retrieve JSON from the server and use build-in json() to parse response into objects */
 function getHelloName() {
-  fetch('/data').then(response => response.text()).then((phrase) => {
-    document.getElementById('phrase-container').innerText = phrase;
+  fetch('/data')  // sends a request to /my-data-url
+  .then(response => response.json()) // parses the response as JSON
+  .then((list) => { // now we can reference the fields in myObject!
+    
+    const listElement = document.getElementById('phrase-container');
+    listElement.innerHTML='';
+    listElement.appendChild(
+        createListElement('This should be the first: ' + list[0]));
+    console.log(list[0]);
+    listElement.appendChild(
+        createListElement('This should be the second: ' + list[1]));
+    console.log(list[1]);
+    listElement.appendChild(
+        createListElement('This should be the third: ' + list[2]));
+    console.log(list[2]);
   });
 }
+
+
