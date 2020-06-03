@@ -48,6 +48,7 @@ function createListElement(text) {
 }
 
 /* Retrieve JSON from the server and use build-in json() to parse response into objects */
+
 function commentFunction() {
   fetch('/data')  // sends a request to /my-data-url
   .then(response => response.json()) // parses the response as JSON
