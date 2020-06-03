@@ -49,9 +49,6 @@ function createListElement(text) {
 
 /* Retrieve JSON from the server and use build-in json() to parse response into objects */
 function getHelloName() {
-//   fetch('/data').then(response => response.text()).then((phrase) => {
-//     document.getElementById('phrase-container').innerText = phrase;
-//   });
   fetch('/data')  // sends a request to /my-data-url
   .then(response => response.json()) // parses the response as JSON
   .then((list) => { // now we can reference the fields in myObject!
