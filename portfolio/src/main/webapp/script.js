@@ -52,14 +52,37 @@ function createListElement(text) {
 function commentFunction() {
   fetch('/data')  // sends a request to /my-data-url
   .then(response => response.json()) // parses the response as JSON
-  .then((list) => { // now we can reference the fields in myObject!
-    
-    const listElement = document.getElementById('history');
-    listElement.innerHTML='';
-
-    list.forEach((line) => {
-      listElement.appendChild(createListElement(line));
-
+  .then((comments) => { // now we can reference the fields in myObject!
+    const commentListElement = document.getElementById('history');
+    comments.forEach((comment) => {
+        commentListElement.appendChild(createCommentElement(comment));
     });
   });
+}
+
+function createCommentElement(comment) {
+  const commentElement = document.createElement('li');
+  commentElement.className = 'comment';
+
+  const nameElement = document.createElement('h4');
+  nameElement.innerText = comment.name;
+
+  const textElement = document.createElement('p');
+  textElement.innerText = comment.text;
+  
+  const deleteButtonElement = document.createElement('button');
+  deleteButtonElement.innerText = 'Delete';
+  deleteButtonElement.addEventListener('click', () => {
+    deleteComment(comment);
+
+    // Remove the task from the DOM.
+    commentElement.remove();
+  });
+
+  
+  commentElement.appendChild(nameElement);
+//   commentElement.appendChild(breakElement);
+  commentElement.appendChild(textElement);
+  commentElement.appendChild(deleteButtonElement);
+  return commentElement;
 }

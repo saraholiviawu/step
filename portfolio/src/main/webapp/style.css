@@ -179,15 +179,21 @@ h2 p {
     font-size: 22px;
 }
 
+.comment-wrapper {
+    padding: 30px;
+}
+
+.comment-wrapper ul {
+    list-style-type: none;
+}
+
 .comment-wrapper h2 {
     font-family: 'Crimson Text', serif;
     font-weight: 600;
     font-size: 40px;
-    padding-top: 100px;
 }
 
 .comment-wrapper p {
-    padding: 30px;
     justify-content: center;
     color: #fff;
     font-size: 22px
