@@ -67,8 +67,6 @@ function createCommentElement(comment) {
   const nameElement = document.createElement('h4');
   nameElement.innerText = comment.name;
 
-//   const breakElement = document.createElement('BR');
-
   const textElement = document.createElement('p');
   textElement.innerText = comment.text;
   
